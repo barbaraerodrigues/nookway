@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Turismo Social - Início</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOOKWAY - Início</title>
+  <link rel="stylesheet" href="css/nookway.css">
 </head>
+
 <body>
 
-<header class="header">
-    <h2>Turismo Social</h2>
-</header>
+  <?php include 'templates/header.php'; ?>
 
-<section class="hero">
-    <h1>Descubra Experiências Únicas</h1>
-    <p>Conectamos turistas a guias locais para viver aventuras personalizadas no Porto e em Portugal.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <div class="kicker">Bem-vindo à NookWay</div>
+        <h1>Descubra experiências autênticas</h1>
+        <p class="lead">Conectamos viajantes e guias locais em uma plataforma moderna, simples e segura.</p>
 
-    <div class="buttons">
-        <a href="login.php" class="btn-primary">Entrar</a>
-        <a href="cadastro_turista.php" class="btn-secondary">Criar Conta</a>
+        <div class="cta">
+          <a href="explorar.php" class="btn primary">Explorar Tours</a>
+          
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer class="footer">
-    <p>© 2025 Turismo Social — Projeto TCC</p>
-</footer>
+  <?php include 'templates/footer.php'; ?>
 
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
